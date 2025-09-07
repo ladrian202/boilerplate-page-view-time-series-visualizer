@@ -41,7 +41,7 @@ def draw_bar_plot():
     df_grouped = df_grouped[month_order]
 
     # Draw bar plot
-    fig = df_grouped.plot(kind='bar', figsize=(15, 10)).figure
+    fig = df_grouped.plot(kind='bar', figsize=(15, 5)).figure
     plt.xlabel('Years')
     plt.ylabel('Average Page Views')
     plt.legend(title='Months')
@@ -63,7 +63,7 @@ def draw_box_plot():
                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
     # Draw box plots (using Seaborn)
-    fig, axes = plt.subplots(1, 2, figsize=(20, 7))
+    fig, axes = plt.subplots(1, 2, figsize=(15, 5))
 
     # Year-wise Box Plot
     sns.boxplot(
